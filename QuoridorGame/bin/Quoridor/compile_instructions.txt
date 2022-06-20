@@ -1,0 +1,16 @@
+Compile/Run from a shell/cmd/terminal window:
+
+1. Open shell/cmd/terminal depending on your OS.
+
+2. Navigate to inside the Quoridor folder.
+
+3. Type the following:
+	javac *.java. 
+   This creates the class files for the source code, runnable by the JVM.
+
+4. To run the program, type the code:
+	java -cp .. Quoridor.Driver
+   This line tells the JVM to include the path to "Quoridor" package in its classpath
+   system variable when executing the code in the Driver class file.
+
+Remember to recompile the code if you edit it.
