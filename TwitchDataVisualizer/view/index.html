@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+    <title>Twitch Data Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scada&display=swap"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+</head>
+<body>
+    <div id="main-container">
+        <h1>Twitch Data Visualizer</h1>
+        <div class="tab">
+            <button id="btn-graphs" class="tablinks">Summary</button>
+            <button class="tablinks">Add</button>
+            <button class="tablinks">Find</button>        
+            <button id="btn-list-all" class="tablinks">List</button>        
+        </div>
+        <div id="graph-container">
+            <div class="bar-graph-container">
+                <div class="card-container">
+                    <canvas id="bar-chart-1"></canvas>
+                </div>
+                <div class="card-container">
+                    <canvas id="bar-chart-2"></canvas>
+                </div>
+            </div>
+            <div class="pie-chart-container">
+                <div class="card-container">
+                    <canvas id="pie-chart-1"></canvas>
+                </div>
+                <div class="card-container">
+                    <canvas id="pie-chart-2"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="add-streamer-tab" class="tabcontent">
+            <form>
+                <label for="add-name">Name</label>
+                <input type="text" id="add-name" name="name">
+                <label for="add-watch-time">Minutes Watched</label>
+                <input type="text" id="add-watch-time" name="watchtime">
+                <label for="add-stream-time">Minutes Streamed</label>
+                <input type="text" id="add-stream-time" name="streamtime">
+                <label for="add-max-viewers">Max Viewers</label>
+                <input type="text" id="add-max-viewers" name="maxviewers">
+                <div>
+                    <button id="add-streamer-btn">Add</button>
+                    <output id="add-out"></output>
+                </div>            
+            </form>
+        </div>
+        <div id="find-streamer" class="tabcontent">
+            <form>
+                <label for="find-name">Name</label>
+                <input type="text" id="find-name-search">
+                <div>
+                    <button id="btn-find-streamer">Find</button>
+                    <output id="find-out"></output>
+                </div>
+            </form>
+            <hr>
+            <h2>Streamer Info</h2>
+            <div class="flex-container">            
+                <label for="find-name">Name</label>
+                <input type="text" id="find-name">
+                <label for="find-watch-time">Hours Watched</label>
+                <input type="text" id="find-watch-time">
+                <label for="find-stream-time">Hours Streamed</label>
+                <input type="text" id="find-stream-time">
+                <label for="find-max-viewers">Max Viewers</label>
+                <input type="text" id="find-max-viewers">
+            </div>    
+            <div class="flex-container">
+                <label for="find-avg-viewers">Daily Views</label>
+                <input type="text" id="find-avg-viewers">
+                <label for="find-followers">Follower Count</label>
+                <input type="text" id="find-followers">
+                <label for="find-view-count">View Count</label>
+                <input type="text" id="find-view-count">
+                <label for="find-is-live">Live</label>
+                <input type="text" id="find-is-live">
+            </div>
+            <div class="flex-container">              
+                <label for="find-playing">Currently PLaying</label>
+                <input type="text" id="find-playing">
+                <label for="find-partnered">Partnered</label>
+                <input type="text" id="find-partnered">
+                <label for="find-mature">Mature</label>
+                <input type="text" id="find-mature">
+                <label for="find-lang">Language</label>
+                <input type="text" id="find-lang">
+                
+            </div>        
+            <div class="flex-button-container">
+                <button id="btn-update-streamer">Update</button>
+                <button id="btn-delete-streamer">Delete</button>
+                <output id="update-delete-out"></output>
+            </div>
+        </div>
+        <div id="list-streamers" class="tabcontent"></div>
+        <script src="./js/main.js"></script>   
+        <script src="./js/add.js"></script>   
+        <script src="./js/find.js"></script>   
+        <script src="./js/list.js"></script>
+        <script src="./js/graphs.js"></script>
+    </div>                     
+</body>
