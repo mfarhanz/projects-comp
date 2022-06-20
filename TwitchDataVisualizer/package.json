@@ -1,0 +1,25 @@
+{
+  "name": "iteration-3",
+  "version": "1.0.0",
+  "description": "Server side + client side code for the COMP 3100 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "Mocha"
+  },
+  "author": "Mohammed Farhan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "request": "^2.88.2",
+    "twitch": "^4.6.7",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.2"
+  }
+}
