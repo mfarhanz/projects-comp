@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Site Checker</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'site_status_checker/site.css' %}" />
+    </head>
+    <body class="message">
+        {{ log|linebreaks }}
+        <br>
+        Site status for {{ url }} :  <span class="status_col">{{ status }}</span>
+    </body>
+</html>
