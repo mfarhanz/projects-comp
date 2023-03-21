@@ -6,20 +6,34 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
 ### Django Install/Setup  
 1. On your file system, create a project folder with a suitable name, such as SiteStatusChecker.
 2. Navigate to the folder in command prompt and run the following code:  
-    py -3 -m venv .venv  
+    ```
+    py -3 -m venv .venv 
     .venv\scripts\activate  
+    ```
 3. Update pip in the virtual environment by running the following command in cmd:  
+    ```
     python -m pip install --upgrade pip  
+    ```
 5. Install Django in the virtual environment by running the following command in cmd:  
+    ```
     python -m pip install django  
+    ```
 6. Install Requests in the virtual environment by running the following command in cmd:  
+    ```
     python -m pip install requests  
+    ```
 7. Run the following command in the same (venv) directory:  
+    ```
     django-admin startproject web_project .  
+    ```
 8. Create an empty development database by running the following command:  
+    ```
     python manage.py migrate  
+    ```
 9. Next, create the app folder holding the source code for this program with the following command:  
+    ```
     python manage.py startapp site_status_checker  
+    ```
 10. Replace the contents of the *site_status_checker* folder just made with the corresponding contents of *site_status_checker* in this repository.  
 11. Replace the contents of the file *urls.py* in SiteStatusChecker\web_project with the following code:  
     ```
