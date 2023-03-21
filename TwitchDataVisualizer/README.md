@@ -13,4 +13,4 @@ Once mongo is running in the background, open a terminal in the code’s root fo
 Install dependencies -   ``` npm install  ```  
 Run the script via -   ``` node app.js  ```  
 
-Once the script is running, the application can be viewed via entering in the web browser,   localhost:3000
+Once the script is running, the application can be viewed via entering in the web browser:   ```localhost:3000```
