@@ -56,7 +56,7 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
     ```
     python manage.py runserver
     ```  
-    Now, the site can be accessed at the given server link, eg. http://127.0.0.1:8000/ 
+    Now, the site can be accessed at the given server link, eg. http://127.0.0.1:8000/  
     To stop the program, press CTRL-C in cmd.
     
     
