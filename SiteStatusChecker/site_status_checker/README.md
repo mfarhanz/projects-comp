@@ -47,5 +47,17 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
     ]
 
     urlpatterns += staticfiles_urlpatterns()
+    ```  
+12. Finally, in the web_project/settings.py file, locate the INSTALLED_APPS list and add the following entry, which makes sure the project knows about the app so it can handle templating:  
     ```
-
+    'site_status_checker',  
+    ```
+13. To run the program, make sure the virtual enivronment is activated, and in the root (venv) directory, run:  
+    ```
+    python manage.py runserver
+    ```  
+    Now, the site can be accessed at the given server link, eg. http://127.0.0.1:8000/ 
+    To stop the program, press CTRL-C in cmd.
+    
+    
+    
