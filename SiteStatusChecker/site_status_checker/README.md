@@ -21,7 +21,8 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
 9. Next, create the app folder holding the source code for this program with the following command:  
     python manage.py startapp site_status_checker  
 10. Replace the contents of the *site_status_checker* folder just made with the corresponding contents of *site_status_checker* in this repository.  
-11. Replace the contents of the file *urls.py* in SiteStatusChecker\web_project with the following code:    
+11. Replace the contents of the file *urls.py* in SiteStatusChecker\web_project with the following code:  
+    ```
     from django.contrib import admin
     from django.urls import include, path
     from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -32,7 +33,5 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
     ]
 
     urlpatterns += staticfiles_urlpatterns()
-
-
-urlpatterns += staticfiles_urlpatterns()
+    ```
 
