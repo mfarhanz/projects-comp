@@ -34,7 +34,7 @@ Note:- This program was initially desgined to run on Windows, its fairly simple 
     ```
     python manage.py startapp site_status_checker  
     ```
-10. Replace the contents of the *site_status_checker* folder just made with the corresponding contents of *site_status_checker* in this repository.  
+10. Replace the contents of the *site_status_checker* folder just made with the corresponding contents of *site_status_checker* in this repository. A useful site for this purpose is https://download-directory.github.io/ , allowing you to download any section of a github repository.
 11. Replace the contents of the file *urls.py* in SiteStatusChecker\web_project with the following code:  
     ```
     from django.contrib import admin
