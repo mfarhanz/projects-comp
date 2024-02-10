@@ -1,3 +1,5 @@
+<h6><p align="right">Created: April 2021</p></h6>
+
 ### Prerequisites  
 For this program to work, Python (with accompanying pip installation), the Django framework, and the Requests library must be installed.
 An example Django installation and environment setup guide has been provided below.  
