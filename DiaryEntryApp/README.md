@@ -1,3 +1,5 @@
+<h6><p align="right">Created: Sept 2023</p></h6>
+
 ## Dear Diary App
 This was a rather neat app made using in Flutter using Dart and FirebaseDB services, so worth putting up here.
 Able to do CRUD operations for diary entries, including adding images. Currently needs a splash page a better icon, maybe include recordings in entries
